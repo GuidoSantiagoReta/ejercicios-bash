@@ -17,11 +17,6 @@ done
 
 # SWITCH
 
-
-#!/bin/bash
-
-#!/bin/bash
-
 opcion=1
 
 select opcion in "Opción 1" "Opción 2" "Opción 3"; do
