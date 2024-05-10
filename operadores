@@ -67,22 +67,9 @@ if [[ $num1 -gt 30 || $num2 -lt 5 ]]; then
         echo "Al menos una condicion es verdadera."
 fi
 
-#!/bin/bash
-
-echo "Operadores booleanos"
-# -gt(mayor que) -lt(menor que)
-
-# AND
-if [[ $num1 -gt 10 && $num2 -lt 20 ]]; then
-    echo "Ambas condiciones son verdaderas."
-fi
-
-# OR 
-if [[ $num1 -gt 30 || $num2 -lt 5 ]]; then
-    echo "Al menos una condición es verdadera."
-fi
 
 # NOT
+
 if [[ ! $num1 -lt 15 ]]; then
     echo "Condición falsa."
 fi
