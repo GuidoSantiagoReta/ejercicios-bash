@@ -1,43 +1,33 @@
 #!/bin/bash
 
 # Definir variables
-
 num1=1
 num2=2
 num3=3
 num4=4
 
-
 # Mostrar los números
-
 echo $num1 $num2 $num3 $num4
 
 # Calcular y mostrar suma
-
-sum=$(($num1 + num2 + num3 + num3))
+sum=$(($num1 + num2 + num3 + num4))
 echo $sum
 
-# Calcular y mostrar el productos
-
-prod=$(($num1 * $num2 * $num3 *num4))
-
+# Calcular y mostrar el producto
+prod=$(($num1 * $num2 * $num3 * $num4))
 echo $prod
 
 # Operadores Relacionales
-
 echo "Operadores Relacionales"
-
 echo "$num1 > $num2 = " $((num1 > num2))
 echo "$num1 < $num2 = " $((num1 < num2))
 echo "$num1 >= $num2 = " $((num1 >= num2))
 echo "$num1 <= $num2 = " $((num1 <= num2))
 echo "$num1 == $num2 = " $((num1 == num2))
-echo "$num1 != $num2 = " $((num1 != num2))
+echo "$num1!= $num2 = " $((num1!= num2))
 
 # Operadores de Asignación
-
 echo "Operadores de Asignación"
-
 echo "$num1 += $num2 = " $((num1 += num2))
 echo "$num1 -= $num2 = " $((num1 -= num2))
 echo "$num1 *= $num2 = " $((num1 *= num2))
@@ -50,28 +40,20 @@ else
 fi
 
 # Operadores booleanos
-
 echo "Operadores booleanos"
-# -gt(mayor que) -lt(menor que)
-
 # AND
-
 if [[ $num1 -gt 10 && $num2 -lt 20 ]]; then
-	echo "Ambas condiciones son verdaderas."
+    echo "Ambas condiciones son verdaderas."
 fi
 
-
-# OR 
-
+# OR
 if [[ $num1 -gt 30 || $num2 -lt 5 ]]; then
-        echo "Al menos una condicion es verdadera."
+    echo "Al menos una condición es verdadera."
 fi
-
 
 # NOT
-
-if [[ ! $num1 -lt 15 ]]; then
+if [[! $num1 -lt 15 ]]; then
     echo "Condición falsa."
 fi
- 
+
 
