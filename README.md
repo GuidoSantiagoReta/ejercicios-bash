@@ -44,4 +44,16 @@ __Guardar archivo editado y salir__
 :wq
 
 ```
+__ Dar permisos de ejecución__
 
+```
+chmod +x nombre_script
+
+```
+
+__ejecutar script desde la terminal en el directorio__
+
+```
+./nombre_script
+
+```
